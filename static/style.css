@@ -1,0 +1,98 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Body styling */
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container for form */
+.input {
+    background: white;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Heading */
+.input h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: #4b2e83;
+    font-weight: 700;
+}
+
+/* Labels */
+.input label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #4b2e83;
+}
+
+/* Select & Input fields */
+.input select,
+.input input[type="integer"],
+.input input[type="text"],
+.input input[type="number"],
+.input input[type="email"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 25px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+/* Change border color on focus */
+.input select:focus,
+.input input[type="integer"]:focus,
+.input input[type="text"]:focus,
+.input input[type="number"]:focus,
+.input input[type="email"]:focus {
+    border-color: #764ba2;
+    outline: none;
+}
+
+/* Submit button */
+.input input[type="submit"] {
+    width: 100%;
+    padding: 14px 0;
+    background: #764ba2;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.input input[type="submit"]:hover {
+    background: #5a3574;
+}
+
+/* Paragraph for result */
+p {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 600;
+}
